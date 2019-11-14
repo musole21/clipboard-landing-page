@@ -1,0 +1,10 @@
+@mixin grid($gap: 0, $items-x: initial, $items-y: initial) {
+  display: grid;
+  grid-gap: $gap;
+  justify-items: $items-x;
+  align-items: $items-y;
+}
+
+@mixin flex {
+  display: flex;
+}
