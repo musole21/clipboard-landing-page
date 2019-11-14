@@ -1,0 +1,51 @@
+@import "../02\ tools/normalize";
+@import "../01-helpers/variables";
+@import "../01-helpers/mixins";
+@import "../03\ base/base-styles";
+
+// header styles
+.main-header {
+  padding: 8rem 5%;
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    @include grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .intro-heading {
+    font-size: 1.75rem;
+  }
+
+  .intro-description {
+    margin: 1rem 0 2rem;
+  }
+}
+
+.header-form {
+  @include flex;
+  flex-wrap: wrap;
+  input {
+    border: none;
+    border-radius: 50px;
+    padding: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+    flex: 1 1 100%;
+  }
+
+  .iOS {
+    background-color: color(strongcyan);
+  }
+
+  .mac {
+    background-color: color(lightblue);
+  }
+}
