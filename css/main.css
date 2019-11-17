@@ -406,7 +406,7 @@ p {
   margin: 1rem 0 2rem;
 }
 
-.header-form {
+.download-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,7 +414,7 @@ p {
       flex-wrap: wrap;
 }
 
-.header-form input {
+.download-form input {
   border: none;
   border-radius: 50px;
   padding: 1rem;
@@ -426,11 +426,80 @@ p {
           flex: 1 1 100%;
 }
 
-.header-form .iOS {
+.download-form .download-btn-mac {
   background-color: #26baa4;
 }
 
-.header-form .mac {
+.download-form .download-btn-ios {
   background-color: #6173ff;
+}
+
+.feature-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  justify-items: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+.feature-container .container-intro {
+  text-align: center;
+  max-width: 375px;
+}
+
+.feature-container .container-heading {
+  font-size: 1.7em;
+  margin: 1.3rem 0;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature .feature-heading {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.tracking,
+.clipboard {
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  justify-items: center;
+  gap: 3rem;
+  padding: 0 5%;
+  margin-top: 8rem;
+}
+
+.tracking img,
+.clipboard img {
+  width: 100%;
+}
+
+.workflow {
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  justify-items: center;
+  gap: 3rem;
+  padding: 0 5%;
+}
+
+.workflow .feature-heading {
+  margin: 2rem 0 1rem;
+}
+
+.clients {
+  margin-top: 8rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  justify-items: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  justify-items: center;
+  gap: 5rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -28,7 +28,7 @@
   }
 }
 
-.header-form {
+.download-form {
   @include flex;
   flex-wrap: wrap;
   input {
@@ -41,11 +41,67 @@
     flex: 1 1 100%;
   }
 
-  .iOS {
+  .download-btn-mac {
     background-color: color(strongcyan);
   }
 
-  .mac {
+  .download-btn-ios {
     background-color: color(lightblue);
   }
+}
+
+// main content - features
+.feature-container {
+  @include grid;
+
+  .container-intro {
+    text-align: center;
+    max-width: 375px;
+  }
+
+  .container-heading {
+    font-size: 1.7em;
+    margin: 1.3rem 0;
+  }
+}
+
+.feature {
+  text-align: center;
+
+  & .feature-heading {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+  }
+}
+
+// mixin for feature container
+@mixin feature-container {
+  grid-template-columns: auto;
+  justify-items: center;
+  gap: 3rem;
+  padding: 0 5%;
+}
+
+.tracking,
+.clipboard {
+  @include feature-container;
+  margin-top: 8rem;
+  img {
+    width: 100%;
+  }
+}
+
+.workflow {
+  @include feature-container;
+
+  .feature-heading {
+    margin: 2rem 0 1rem;
+  }
+}
+
+.clients {
+  margin-top: 8rem;
+  @include grid;
+  justify-items: center;
+  gap: 5rem;
 }
