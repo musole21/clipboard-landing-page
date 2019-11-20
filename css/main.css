@@ -398,6 +398,10 @@ p {
   text-align: center;
 }
 
+.main-header .header-logo {
+  margin-bottom: 3rem;
+}
+
 .main-header .intro-heading {
   font-size: 1.75rem;
 }
@@ -428,10 +432,14 @@ p {
 
 .download-form .download-btn-mac {
   background-color: #26baa4;
+  -webkit-box-shadow: 0 4px 0 #22a591;
+          box-shadow: 0 4px 0 #22a591;
 }
 
 .download-form .download-btn-ios {
   background-color: #6173ff;
+  -webkit-box-shadow: 0 4px 0 #475dff;
+          box-shadow: 0 4px 0 #475dff;
 }
 
 .feature-container {
@@ -451,6 +459,7 @@ p {
 
 .feature-container .container-heading {
   font-size: 1.7em;
+  font-weight: 900;
   margin: 1.3rem 0;
 }
 
@@ -464,20 +473,7 @@ p {
 }
 
 .tracking,
-.clipboard {
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  justify-items: center;
-  gap: 3rem;
-  padding: 0 5%;
-  margin-top: 8rem;
-}
-
-.tracking img,
-.clipboard img {
-  width: 100%;
-}
-
+.clipboard,
 .workflow {
   -ms-grid-columns: auto;
       grid-template-columns: auto;
@@ -486,8 +482,21 @@ p {
   padding: 0 5%;
 }
 
+.tracking img,
+.clipboard img {
+  width: 100%;
+}
+
+.clipboard {
+  margin: 8rem 0 3rem;
+}
+
 .workflow .feature-heading {
   margin: 2rem 0 1rem;
+}
+
+.workflow .container-intro {
+  margin-bottom: 2rem;
 }
 
 .clients {
@@ -501,5 +510,58 @@ p {
           align-items: initial;
   justify-items: center;
   gap: 5rem;
+}
+
+.promo {
+  text-align: center;
+  padding: 8rem 5%;
+}
+
+.promo .promo-heading {
+  font-size: 1.7rem;
+  margin: 2rem 0;
+}
+
+.promo .promo-description {
+  margin: 1.5rem 0;
+}
+
+.main-footer {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  justify-items: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  justify-items: center;
+  gap: 2rem;
+  background-color: #f4f5f6;
+  padding: 4rem;
+}
+
+.main-footer .footer-logo {
+  width: 70px;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links li {
+  padding-bottom: 2rem;
+}
+
+.social-links {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  justify-items: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

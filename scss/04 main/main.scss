@@ -19,6 +19,10 @@
     text-align: center;
   }
 
+  .header-logo {
+    margin-bottom: 3rem;
+  }
+
   .intro-heading {
     font-size: 1.75rem;
   }
@@ -43,10 +47,12 @@
 
   .download-btn-mac {
     background-color: color(strongcyan);
+    box-shadow: 0 4px 0 darken(color(strongcyan), 5%);
   }
 
   .download-btn-ios {
     background-color: color(lightblue);
+    box-shadow: 0 4px 0 darken(color(lightblue), 5%);
   }
 }
 
@@ -61,6 +67,7 @@
 
   .container-heading {
     font-size: 1.7em;
+    font-weight: 900;
     margin: 1.3rem 0;
   }
 }
@@ -83,19 +90,28 @@
 }
 
 .tracking,
-.clipboard {
+.clipboard,
+.workflow {
   @include feature-container;
-  margin-top: 8rem;
+}
+
+.tracking,
+.clipboard {
   img {
     width: 100%;
   }
 }
+.clipboard {
+  margin: 8rem 0 3rem;
+}
 
 .workflow {
-  @include feature-container;
-
   .feature-heading {
     margin: 2rem 0 1rem;
+  }
+
+  .container-intro {
+    margin-bottom: 2rem;
   }
 }
 
@@ -104,4 +120,47 @@
   @include grid;
   justify-items: center;
   gap: 5rem;
+}
+
+// promo styles
+.promo {
+  // max-width: 375px;
+  text-align: center;
+  padding: 8rem 5%;
+
+  .promo-heading {
+    font-size: 1.7rem;
+    margin: 2rem 0;
+  }
+
+  .promo-description {
+    margin: 1.5rem 0;
+  }
+}
+
+// footer styles
+.main-footer {
+  @include grid;
+  justify-items: center;
+  gap: 2rem;
+  background-color: lighten(color(grayishblue), 30%);
+  padding: 4rem;
+
+  .footer-logo {
+    width: 70px;
+  }
+}
+
+.footer-links {
+  text-align: center;
+
+  li {
+    padding-bottom: 2rem;
+  }
+}
+
+.social-links {
+  @include grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
