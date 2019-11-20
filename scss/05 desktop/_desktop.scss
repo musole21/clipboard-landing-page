@@ -1,0 +1,29 @@
+@mixin desktop($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+.main-header {
+  @include desktop(700px) {
+    background-image: url("/images/bg-header-desktop.png");
+
+    .wrapper {
+      max-width: 600px;
+    }
+
+    .download-form {
+      flex-wrap: nowrap;
+      justify-self: stretch;
+
+      input {
+        flex-basis: 50%;
+        margin-bottom: 0;
+      }
+
+      .download-btn-mac {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}

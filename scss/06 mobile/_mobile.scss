@@ -1,0 +1,161 @@
+// header styles
+.main-header {
+  padding: 8rem 5%;
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    @include grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .header-logo {
+    margin-bottom: 3rem;
+  }
+
+  .intro-heading {
+    font-size: 1.75rem;
+  }
+
+  .intro-description {
+    margin: 1rem 0 2rem;
+  }
+}
+
+.download-form {
+  @include flex;
+  flex-wrap: wrap;
+  input {
+    border: none;
+    border-radius: 50px;
+    padding: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+    flex: 1 1 100%;
+  }
+
+  .download-btn-mac {
+    background-color: color(strongcyan);
+    box-shadow: 0 4px 0 darken(color(strongcyan), 5%);
+  }
+
+  .download-btn-ios {
+    background-color: color(lightblue);
+    box-shadow: 0 4px 0 darken(color(lightblue), 5%);
+  }
+}
+
+// main content - features
+.feature-container {
+  @include grid;
+
+  .container-intro {
+    text-align: center;
+    max-width: 375px;
+  }
+
+  .container-heading {
+    font-size: 1.7em;
+    font-weight: 900;
+    margin: 1.3rem 0;
+  }
+}
+
+.feature {
+  text-align: center;
+
+  & .feature-heading {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+  }
+}
+
+// mixin for feature container
+@mixin feature-container {
+  grid-template-columns: auto;
+  justify-items: center;
+  gap: 3rem;
+  padding: 0 5%;
+}
+
+.tracking,
+.clipboard,
+.workflow {
+  @include feature-container;
+}
+
+.tracking,
+.clipboard {
+  img {
+    width: 100%;
+  }
+}
+.clipboard {
+  margin: 8rem 0 3rem;
+}
+
+.workflow {
+  .feature-heading {
+    margin: 2rem 0 1rem;
+  }
+
+  .container-intro {
+    margin-bottom: 2rem;
+  }
+}
+
+.clients {
+  margin-top: 8rem;
+  @include grid;
+  justify-items: center;
+  gap: 5rem;
+}
+
+// promo styles
+.promo {
+  // max-width: 375px;
+  text-align: center;
+  padding: 8rem 5%;
+
+  .promo-heading {
+    font-size: 1.7rem;
+    margin: 2rem 0;
+  }
+
+  .promo-description {
+    margin: 1.5rem 0;
+  }
+}
+
+// footer styles
+.main-footer {
+  @include grid;
+  justify-items: center;
+  gap: 2rem;
+  background-color: lighten(color(grayishblue), 30%);
+  padding: 4rem;
+
+  .footer-logo {
+    width: 70px;
+  }
+}
+
+.footer-links {
+  text-align: center;
+
+  li {
+    padding-bottom: 2rem;
+  }
+}
+
+.social-links {
+  @include grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}

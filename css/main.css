@@ -564,4 +564,27 @@ p {
       grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
+@media screen and (min-width: 700px) {
+  .main-header {
+    background-image: url("/images/bg-header-desktop.png");
+  }
+  .main-header .wrapper {
+    max-width: 600px;
+  }
+  .main-header .download-form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+  }
+  .main-header .download-form input {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 0;
+  }
+  .main-header .download-form .download-btn-mac {
+    margin-right: 1.5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
