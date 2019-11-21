@@ -373,7 +373,7 @@ p {
 
 .main-header {
   padding: 8rem 5%;
-  background-image: url("./images/bg-header-mobile.png");
+  background-image: url("../../images/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -555,7 +555,7 @@ p {
 
 @media screen and (min-width: 700px) {
   .main-header {
-    background-image: url("./images/bg-header-desktop.png");
+    background-image: url("../../images/bg-header-desktop.png");
   }
   .main-header .wrapper {
     max-width: 600px;
