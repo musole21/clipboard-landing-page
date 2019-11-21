@@ -6,7 +6,7 @@
 
 .main-header {
   @include desktop(700px) {
-    background-image: url("/images/bg-header-desktop.png");
+    background-image: url("./images/bg-header-desktop.png");
 
     .wrapper {
       max-width: 600px;
