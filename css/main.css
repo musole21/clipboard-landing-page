@@ -44,8 +44,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -82,8 +81,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -230,8 +228,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -265,8 +262,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -346,8 +342,7 @@ template {
 *::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -387,13 +382,10 @@ p {
 .main-header .wrapper {
   max-width: 375px;
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   justify-items: initial;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
+  align-items: initial;
   justify-items: center;
   text-align: center;
 }
@@ -411,11 +403,8 @@ p {
 }
 
 .download-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .download-form input {
@@ -425,31 +414,24 @@ p {
   font-weight: 600;
   color: #fff;
   margin-bottom: 1rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 .download-form .download-btn-mac {
   background-color: #26baa4;
-  -webkit-box-shadow: 0 4px 0 #22a591;
-          box-shadow: 0 4px 0 #22a591;
+  box-shadow: 0 4px 0 #22a591;
 }
 
 .download-form .download-btn-ios {
   background-color: #6173ff;
-  -webkit-box-shadow: 0 4px 0 #475dff;
-          box-shadow: 0 4px 0 #475dff;
+  box-shadow: 0 4px 0 #475dff;
 }
 
 .feature-container {
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   justify-items: initial;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
+  align-items: initial;
 }
 
 .feature-container .container-intro {
@@ -476,8 +458,7 @@ p {
 .tracking,
 .clipboard,
 .workflow {
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  grid-template-columns: auto;
   justify-items: center;
   gap: 3rem;
   padding: 0 5%;
@@ -502,13 +483,10 @@ p {
 
 .clients {
   margin-top: 8rem;
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   justify-items: initial;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
+  align-items: initial;
   justify-items: center;
   gap: 5rem;
 }
@@ -528,13 +506,10 @@ p {
 }
 
 .main-footer {
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   justify-items: initial;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
+  align-items: initial;
   justify-items: center;
   gap: 2rem;
   background-color: #f4f5f6;
@@ -560,15 +535,11 @@ p {
 }
 
 .social-links {
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   justify-items: initial;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  align-items: initial;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -593,14 +564,11 @@ p {
 
 @media screen and (min-width: 700px) {
   .download-form {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-grid-column-align: stretch;
-        justify-self: stretch;
+    flex-wrap: nowrap;
+    justify-self: stretch;
   }
   .download-form input {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
     margin-bottom: 0;
   }
   .download-form .download-btn-mac {
@@ -610,26 +578,20 @@ p {
 
 @media screen and (min-width: 700px) {
   .tracking {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 0;
   }
   .tracking .container-intro {
     grid-column: 1 / -1;
   }
   .tracking .tracking-image {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1 / span 1;
     grid-row: auto / span 3;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .tracking .feature {
     text-align: left;
-    -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     grid-column: span 1 / -1;
   }
 }
@@ -640,8 +602,7 @@ p {
 
 @media screen and (min-width: 700px) {
   .workflow {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 0 8%;
   }
   .workflow .container-intro {
@@ -650,15 +611,11 @@ p {
     grid-column: 1 / -1;
   }
   .workflow .feature {
-    display: -ms-grid;
     display: grid;
     grid-gap: 0;
     justify-items: initial;
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
-    -ms-grid-rows: 60px auto 1fr;
-        grid-template-rows: 60px auto 1fr;
+    align-items: initial;
+    grid-template-rows: 60px auto 1fr;
   }
   .workflow .feature-icon {
     place-self: center;
@@ -667,11 +624,8 @@ p {
 
 @media screen and (min-width: 700px) {
   .clients {
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
     padding: 0 10%;
   }
   .clients img {
@@ -689,33 +643,21 @@ p {
 
 @media screen and (min-width: 700px) {
   .main-footer {
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
     padding: 2rem;
   }
   .main-footer .footer-nav {
-    -ms-grid-column-align: stretch;
-        justify-self: stretch;
+    justify-self: stretch;
   }
   .main-footer .footer-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .main-footer .footer-links li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 33.333%;
-            flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
     text-align: left;
     padding: 1rem 0;
   }
@@ -723,12 +665,9 @@ p {
 
 @media screen and (min-width: 700px) {
   .attribution {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2 / span 1;
     grid-column: 1 / -1;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
